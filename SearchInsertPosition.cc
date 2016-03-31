@@ -1,35 +1,32 @@
 #include <iostream>
 using namespace std;
 
-class solution{
+class Solution {
 public:
-	int searchInsert(vector<int>& num,int target)
-	{
-		int start=0;
-		int end = num.size()-1;
-		if(num[start]>target)
+    int searchInsert(vector<int>& nums, int target) {
+        int start=0;
+		int end = nums.size()-1;
+			if(nums[start]>target)
 		{
 			return start;
 		}
-		if(num[end]<target)
+		if(nums[end]<target)
 		{
 			return end+1;
 		}
-        while(start<end)
+        while(start<=end)
         {
-           int mid=(start+end)/end;
-           if(num[mid]==target)
+          int mid=start+(end-start)/2;
+          if(nums[mid]==target)
            {
            	   return mid;
-           }else if(num[mid]<target)
+           }else if(nums[mid]<target)
            {  
-           	   start=mid;
+           	   start=mid+1;
            }else{
-
-           	    end=mid;
+           	    end=mid-1;
            }
-           return start;
         }
-	}
-
+         return start;
+    }
 };
