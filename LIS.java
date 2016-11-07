@@ -5,6 +5,12 @@ public class Solution {
      */
     public int longestIncreasingSubsequence(int[] nums) {
         // write your code here
+        /*
+           state : f(i) means the max number of subsequence from the begin to i
+           function :f(i) = max(f(j))+1 when nums[j] < nums[i]
+           initialize : f(0) = 1
+           answer: max(f(0)->f(n-1));
+        */
         if(nums == null || nums.length == 0){
             return 0;
         }
