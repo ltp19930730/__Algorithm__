@@ -15,7 +15,6 @@ public class Solution {
      * @return: You should return the head of the sorted linked list,
                     using constant space complexity.
      */
-     // Solution1: quick sort in place!
     public ListNode sortList(ListNode head) {
         // write your code here
         if (head == null || head.next == null){
