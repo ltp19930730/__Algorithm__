@@ -10,7 +10,7 @@ public class Solution {
         }
         int max = 0;
         Stack<Integer> stack = new Stack<Integer>();
-
+        // O(n) find the segement that is increased
         for (int i = 0; i <= height.length; i++){
             int cur = (i == height.length)?-1:height[i];
             while (!stack.empty() && cur <= height[stack.peek()]){
