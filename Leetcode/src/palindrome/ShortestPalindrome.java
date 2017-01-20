@@ -3,6 +3,9 @@ package palindrome;
 import org.junit.Test;
 
 public class ShortestPalindrome {
+    /*
+     * this algorithm will be out of limit time
+     */
 	public String shortestPalindrome(String s) {
 		if (isPalindrome(s)) {
 			return s;
