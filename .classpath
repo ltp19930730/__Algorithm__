@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Arrays"/>
+	<classpathentry kind="src" path="binaryTree"/>
+	<classpathentry kind="src" path="DataStrucure"/>
+	<classpathentry kind="src" path="DynamicProgramming"/>
+	<classpathentry kind="src" path="Graph"/>
+	<classpathentry kind="src" path="Important"/>
+	<classpathentry kind="src" path="Leetcode/src"/>
+	<classpathentry kind="src" path="LinkedList"/>
+	<classpathentry kind="src" path="TwoPointer"/>
+	<classpathentry kind="src" path="yama_Coding"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Leetcode/bin"/>
+</classpath>
