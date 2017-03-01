@@ -10,6 +10,9 @@ public class MissRange {
 		List<String> result = new ArrayList<>();
 		int prev = lower;
 		for (int i = 0; i <= nums.length; i++) {
+			if (prev == Integer.MAX_VALUE+1) {
+				break;
+			}
 			int cur = 0;
 			if (i != nums.length && nums[i] <= upper){
 				cur = nums[i];
@@ -35,7 +38,7 @@ public class MissRange {
 	// the output should be ["2","4->49","51->74","76->99"]
 	@Test
 	public void test() {
-		int[] nums = {0,1,3,50,75};
-		System.out.println(findMissingRanges(nums, 10, 50));
+		int[] nums = {1,3,50,Integer.MAX_VALUE,Integer.MAX_VALUE};
+		System.out.println(findMissingRanges(nums, 0,Integer.MAX_VALUE ));
 	}
 }
